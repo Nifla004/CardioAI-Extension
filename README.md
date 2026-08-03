@@ -36,6 +36,7 @@ Note: One-Class SVM (anomaly detection) and SVM Classifier (supervised classific
 CardioAI+ extends beyond conventional prediction by incorporating **Conformal Prediction (CP)** to estimate the reliability and uncertainty associated with every cardiac risk assessment. While traditional machine learning models provide only a predicted class or risk score, CardioAI+ additionally measures how confident the system is in its prediction, enabling more trustworthy AI-assisted decision support.
 The conformal prediction module uses a calibration-based approach to generate statistically valid prediction confidence estimates without requiring changes to the underlying machine learning models. This allows the framework to identify high-confidence predictions as well as uncertain cases where additional clinical evaluation may be required.
 By integrating uncertainty quantification with multi-model classification, SHAP-based explainability, and hybrid anomaly detection, CardioAI+ moves toward a **trustworthy healthcare AI framework** that provides not only *what the model predicts*, but also *why the prediction was made* and *how reliable that prediction is*.
+
 **Key outputs include:**
 * Prediction confidence scores for cardiac risk assessments
 * Uncertainty-aware patient risk classification
