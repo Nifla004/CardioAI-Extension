@@ -32,6 +32,17 @@ MLP Neural Network - Feed-forward NN - Complex non-linear relationships
 ANN (Keras) - Deep Learning - Deeper architecture with batch normalisation and dropout
 Note: One-Class SVM (anomaly detection) and SVM Classifier (supervised classification) are different models serving different purposes. Both are included in this framework.
 
+## **Uncertainty Quantification with Conformal Prediction**
+CardioAI+ extends beyond conventional prediction by incorporating **Conformal Prediction (CP)** to estimate the reliability and uncertainty associated with every cardiac risk assessment. While traditional machine learning models provide only a predicted class or risk score, CardioAI+ additionally measures how confident the system is in its prediction, enabling more trustworthy AI-assisted decision support.
+The conformal prediction module uses a calibration-based approach to generate statistically valid prediction confidence estimates without requiring changes to the underlying machine learning models. This allows the framework to identify high-confidence predictions as well as uncertain cases where additional clinical evaluation may be required.
+By integrating uncertainty quantification with multi-model classification, SHAP-based explainability, and hybrid anomaly detection, CardioAI+ moves toward a **trustworthy healthcare AI framework** that provides not only *what the model predicts*, but also *why the prediction was made* and *how reliable that prediction is*.
+**Key outputs include:**
+* Prediction confidence scores for cardiac risk assessments
+* Uncertainty-aware patient risk classification
+* Improved transparency and reliability for AI-assisted healthcare applications
+* Identification of cases requiring further clinical review
+This integration addresses a critical limitation of existing medical AI systems, where highly accurate models can still produce overconfident incorrect predictions. By combining explainability and uncertainty estimation, CardioAI+ aims to support safer and more responsible deployment of AI in cardiovascular risk assessment.
+
 ## **Key Features**
 **Universal Dataset Loader**
 Upload any heart disease CSV — the framework automatically detects your target column and determines whether binary or multi-class classification is needed.
@@ -50,6 +61,8 @@ Framingham Heart Study - Binary - Kaggle
 Heart Failure Prediction - Binary - Kaggle
 ECG Heartbeat Categorisation - Multi-class (ARR/AFF/CHF/NSR) - Kaggle / PhysioNet
 Any uploaded heart CSV - Auto-detected - Your own dataset
+## **Uncertainty-Aware Predictions**
+Uses Conformal Prediction to quantify model uncertainty and provide confidence estimates alongside cardiac risk predictions, enabling more reliable and trustworthy AI-assisted clinical decision support.
 
 ## **Sample Results**
 Results vary by dataset. The framework generates the following outputs after running:
