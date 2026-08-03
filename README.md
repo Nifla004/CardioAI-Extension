@@ -77,6 +77,7 @@ Results vary by dataset. The framework generates the following outputs after run
 * Confusion matrices for all 6 models
 * ANN training loss and accuracy curves
 * A clinical risk recommendation based on ensemble voting
+
 ## **What Makes CardioAI+ Different**
 Dataset flexibility	- One fixed dataset - Any heart CSV — auto-detected
 Model coverage - 1-2 models - 11 models across two paradigms
@@ -85,18 +86,32 @@ Preprocessing - Manual - Fully automatic
 Evaluation - Basic accuracy only - 5 metrics, ROC curves, confusion matrices
 Clinical output - None - Ensemble-based clinical recommendation
 Problem type support - Binary only - Binary and multi-class both
+Uncertainty estimation - Not available - Conformal Prediction-based confidence estimation
+Reliability assessment - Prediction only - Prediction + explanation + uncertainty
 
 ## **Clinical Motivation**
 Cardiovascular disease is the leading cause of death globally, responsible for approximately 17.9 million deaths per year according to the World Health Organization. Early detection and risk stratification remain critical challenges in clinical practice.
-CardioAI+ contributes by making cardiac risk prediction accessible across multiple dataset types, providing explainable predictions that clinicians can interpret, and comparing multiple model paradigms to identify the most reliable approach for each dataset.
+CardioAI+ contributes by making cardiac risk prediction accessible across multiple dataset types, providing explainable predictions that clinicians can interpret, comparing multiple model paradigms to identify reliable approaches, and estimating prediction uncertainty through conformal prediction to support safer AI-assisted clinical decision-making.
+
 **Important disclaimer**: CardioAI+ is a research prototype. All predictions and recommendations must be reviewed by a licensed medical professional. This tool is not approved for clinical use.
 
+## **Research Contributions**
+CardioAI+ introduces several key contributions toward trustworthy cardiac AI:
+
+* A universal cardiac intelligence framework capable of adapting to heterogeneous tabular heart disease datasets
+* Integration of supervised classification and unsupervised anomaly detection paradigms within a unified system
+* SHAP-based explainability for understanding feature-level contributions behind predictions
+* Conformal Prediction-based uncertainty quantification to estimate prediction reliability
+* An ensemble-driven clinical decision-support mechanism combining accuracy, interpretability, and confidence awareness
 
 ## **Future Work**
 * Streamlit web dashboard for interactive clinical predictions
 * LIME explainability alongside SHAP
 * Native support for ECG time-series signal datasets
 * PatternHunter AI — domain-agnostic generalisation of this framework to any tabular dataset beyond cardiac data
+* Adaptive conformal prediction strategies for personalized uncertainty estimation
+* Integration of real-time ECG monitoring with uncertainty-aware prediction
+* Validation of confidence calibration using larger clinical datasets
 
 ## **Acknowledgements**
 * The SHAP library team for making ML explainability accessible
