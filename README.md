@@ -6,32 +6,6 @@ In 2023, my mother was rushed to hospital with a pericardial effusion — a life
 That question became CardioAI. Then CardioAI Hybrid. Then CardioAI+.
 This is not just a university project. It is a personal mission to make cardiac risk prediction more accessible, more accurate, and more explainable to the clinicians who need it most.
 
-## **Project Evolution**
-CardioAI (Original)
-├── Isolation Forest
-└── Autoencoder     ↓
-
-CardioAI Hybrid
-├── Isolation Forest
-├── Autoencoder
-├── One-Class SVM
-├── Local Outlier Factor (LOF)
-└── LSTM Autoencoder
-
-CardioAI+ (This Repository)
-├── All 5 anomaly detection models (from Hybrid)
-├── Logistic Regression
-├── Random Forest
-├── XGBoost
-├── Support Vector Machine (SVM) Classifier
-├── MLP Neural Network (sklearn)
-├── Artificial Neural Network (Keras/TensorFlow)
-├── Universal Dataset Support
-├── Automatic Preprocessing Pipeline
-├── SHAP Explainability
-├── ROC Curve Overlay
-└── Clinical Risk Recommendation System
-
 ## **What CardioAI+ Does**
 CardioAI+ is a universal cardiac risk intelligence framework that accepts any heart disease dataset in CSV format and automatically:
 * Detects whether the dataset is binary or multi-class
