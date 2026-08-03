@@ -14,6 +14,7 @@ CardioAI+ is a universal cardiac risk intelligence framework that accepts any he
 * Provides SHAP-based explanations showing WHY each model made each prediction
 * Generates publication-quality comparison charts and ROC curves
 * Delivers a clinical risk recommendation based on ensemble voting across all models
+* Quantifies prediction uncertainty using Conformal Prediction, providing confidence-aware cardiac risk assessments instead of only binary/class predictions
 
 ## **Models Implemented**
 Anomaly Detection (Unsupervised) — From CardioAI Hybrid
