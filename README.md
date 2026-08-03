@@ -42,7 +42,9 @@ By integrating uncertainty quantification with multi-model classification, SHAP-
 * Uncertainty-aware patient risk classification
 * Improved transparency and reliability for AI-assisted healthcare applications
 * Identification of cases requiring further clinical review
-This integration addresses a critical limitation of existing medical AI systems, where highly accurate models can still produce overconfident incorrect predictions. By combining explainability and uncertainty estimation, CardioAI+ aims to support safer and more responsible deployment of AI in cardiovascular risk assessment.
+
+This integration addresses a critical limitation of existing medical AI systems, where highly accurate models can still produce overconfident incorrect predictions. 
+By combining explainability and uncertainty estimation, CardioAI+ aims to support safer and more responsible deployment of AI in cardiovascular risk assessment.
 
 ## **Key Features**
 **Universal Dataset Loader**
